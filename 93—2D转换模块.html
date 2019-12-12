@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>2D转换模块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            width: 800px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 0 auto;
+        }
+        
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(248, 164, 164);
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        /* 旋转 */
+        
+        ul li:nth-child(2) {
+            /* 其中deg是单位，代表 多少度*/
+            transform: rotate(45deg);
+        }
+        /* 平移 */
+        
+        ul li:nth-child(3) {
+            /* 第一个是水平方向，第二个是垂直方向 */
+            transform: translate(100px, 50px);
+        }
+        /* 缩放 */
+        
+        ul li:nth-child(4) {
+            /*
+             第一个参数水平方向，第二个是垂直方向
+             如果取值是1，代表不变
+             如果取值大于一，代表放大
+             如果取值小于一，代表缩小
+             如果水平和垂直缩放都一样，那么可以简写成一个参数
+             */
+            transform: scale(1.5, 2);
+        }
+        
+        ul li:nth-child(5) {
+            /* 
+            1.注意点：如果需要多个转换，那么用空格隔开
+            2.旋转之后会修改坐标系
+
+             */
+            transform: rotate(45deg) translate(100px, 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>正常的</li>
+        <li>旋转的</li>
+        <li>平移的</li>
+        <li>缩放的</li>
+        <li>综合的</li>
+    </ul>
+</body>
+
+</html>

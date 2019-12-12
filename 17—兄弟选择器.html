@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>兄弟选择器</title>
+    <style>
+        h1+p {
+            color: rgb(60, 184, 233);
+        }
+        
+        h1~p {
+            color: rgb(214, 113, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.相邻兄弟选择器
+      作用：给指定选择器后面的紧跟那个选择器选中的标签设置属性
+
+      格式：选择器1+选择器2{
+          属性：值;
+      }
+
+      注意点：
+        1.必须通过+相连接
+        2.必须相邻，隔一个其他标签都不行
+
+      2.通用兄弟选择器
+      作用：少了紧跟俩字
+
+      格式：选择器1~选择器2{
+          属性：值;
+      }
+   -->
+    <h1>我是标题</h1>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <h1>我是标题</h1>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+</body>
+
+</html>

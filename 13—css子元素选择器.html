@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>子元素选择器</title>
+    <style>
+        div>p {
+            color: aqua;
+        }
+        
+        div>ul>li>p {
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.什么是子元素选择器
+      作用：找到指定标签中所有指定的直接子元素，然后设置属性
+
+      格式：
+        标签名称1>标签名称2{
+            属性：值;
+        }
+        
+        注意点：
+            1.子元素选择器只会查找儿子，不会查找其他嵌套标签
+            2. 子元素选择器不仅仅可以使用标签名称，还可以使用其他选择器
+            3.子元素选择器之间需要有“>”符号连接且不能使用空格
+            4.子元素选择器可以通过“>”一直延续下去
+   -->
+    <div>
+        <p>我是段落</p>
+        <p>我是段落</p>
+        <ul>
+            <li>
+                <p>我是段落</p>
+            </li>
+        </ul>
+    </div>
+    <p>我是段落</p>
+</body>
+
+</html>

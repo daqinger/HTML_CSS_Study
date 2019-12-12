@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>绝对定位—水平居中</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        
+        div img {
+            width: 300px;
+            height: 200px;
+        }
+        
+        div .hot {
+            background: url("images/hot2.jpg") no-repeat -630px -150px;
+            width: 151px;
+            height: 151px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        div .price {
+            background: url("images/jiage.jpg") no-repeat -260px -190px;
+            width: 121px;
+            height: 47px;
+            position: absolute;
+            left: 180px;
+            top: 153px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/shiwu.jpg" alt="">
+        <span class="hot"></span>
+        <span class="price"></span>
+    </div>
+</body>
+
+</html>

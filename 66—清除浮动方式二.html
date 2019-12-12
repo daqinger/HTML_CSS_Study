@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>清除浮动二</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .box1 {
+            background-color: rgb(138, 218, 204);
+        }
+        
+        .box2 {
+            background-color: rgb(44, 199, 77);
+            clear: left;
+        }
+        
+        .box1 p {
+            background-color: rgb(212, 198, 116);
+            width: 100px;
+        }
+        
+        .box2 p {
+            background-color: rgb(196, 98, 98);
+            width: 100px;
+        }
+        
+        p {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.清除浮动的第二种方式
+        给后面盒子添加clear属性
+
+        clear属性取值：
+        none：默认排序，左浮动找左浮动，右浮动找右浮动
+        left：不要找前面的左浮动元素
+        right：同理
+        both：同理
+
+        注意点：
+        当我们给某个属性添加clear属性之后
+        margin属性会失效
+     -->
+    <div class="box1">
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+    </div>
+    <div class="box2">
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+    </div>
+</body>
+
+</html>

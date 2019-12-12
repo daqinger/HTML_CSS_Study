@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>动画模块—其他属性</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      div{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(86, 241, 190);
+        animation-name: aaa;
+        animation-duration: 5s;
+        /* 告诉系统多少秒之后执行动画 */
+        animation-delay: 2s;
+        /* 告诉系统动画执行速度 */
+        animation-timing-function: linear;
+        /* 告诉系统动画需要执行几次*/
+        animation-iteration-count: 3;
+        /* 告诉系统要不要往返*/
+        /* 次数3==过去，回来，过去 */
+        animation-direction: alternate;/*默认是normal*/
+      }
+      @keyframes aaa{
+          from{
+              margin-left: 0;
+          }
+          to{
+              margin-left: 500px;
+          }
+      }
+      div:hover{
+          /* 控制动画运动状态 */
+          animation-play-state: paused;/*默认是running*/
+      }
+  </style>
+ </head>
+ <body>
+  <div></div>
+ </body>
+</html>

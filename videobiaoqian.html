@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>video标签和audio标签</title>
+</head>
+
+<body>
+    <!-- 
+      1.什么是video标签？
+      作用：播放视频    .webm文件是网页上的视频格式
+      格式：
+        <video src="">
+
+        </video>
+
+
+        *video标签属性
+        src：视频播放地址
+        autoplay：告诉video标签是否自动播放视频 值：autoplay
+        controls：用于告诉video是否显示控制条 值：controls
+        poster：用于视频没有播放之前，显示的占位图片 值：图片地址
+        loop：一般用于做广告视频，用于循环播放 值：loop
+        preload：预加载视频 注意preload和autoplay相冲
+        muted：静音 值muted
+
+        width：宽度  推荐只设置一个
+        height：高度
+
+   -->
+    <!-- 
+       video标签 的第二种格式
+       格式：
+        <video>
+            <source src="sb1.webm" type="video/webm"></source>
+            <source src="sb2.mp4" type="video/mp4"></source>
+            <source src="sb3.ogg" type="video/ogg"></source>
+        </video>
+
+        存在意义：为了检查视频格式是否支持浏览器，我们可以三种都写
+        注意：浏览器必须支持HTML5才能实现这一个标签
+    -->
+
+
+    <p>audio标签</p>
+    <!-- 
+        1.什么是audio标签？
+        作用：播放音频
+
+        格式：
+            <audio src=""></audio>
+
+        第二种格式：
+            <audio>
+                <source src="" type="audio/mp3">
+            </audio>
+     -->
+
+
+    <p>
+        详情和概要标签
+    </p>
+    <!-- 
+        1.什么是详情和概要标签？
+        作用：利用summary标签描述概要，details描述详细信息
+
+        格式：
+            <details>
+                <summary>概要信息</summary>
+            </details>
+    -->
+    <details>
+        <summary>概要信息</summary>
+        简介，dhskhfksdjhkfsjdhfk
+    </details>
+    <p>没错，以上那个失败了</p>
+
+    <!-- 
+        marquee标签
+        1.什么是？
+        作用：跑马灯效果
+
+        格式：
+            <marquee>内容</marquee>
+        
+        属性：direction，控制滚动方向 值：right，down，up，left
+             scrollamount，控制滚动速度 值越大越快
+             loop，控制滚动次数
+             behavior，控制滚动类型 值：slide（滚到边界停止）alternate（滚到边界弹回）
+     -->
+    <marquee behavior="" direction="right">随便写点内容</marquee>
+    <marquee behavior="" direction="up">随便写点内容</marquee>
+    <marquee behavior="" direction="left">随便写点内容</marquee>
+
+    <!-- 
+        HTML被废弃的标签
+     -->
+    <!-- 
+         1.为什么：因为有些标签没有语义，只有样式
+            如：<br><hr><font><b><u><i><s>
+      -->
+    <b>我是文字</b>
+    <u>我是文字</u>
+    <i>我是文字</i>
+    <s>我是文字</s>
+    <!-- 
+        以后在企业开发中，不到万不得已，一定不要用
+        如果要用，也是用作css的钩子
+
+        strong==b
+        ins==u
+        em==i
+        del==s
+
+        strong语义：定义重要性强调的文字
+        ins语义（inseted）：定义插入的文字
+        em语义：（emphasized）定义强调的文字
+        del语义：定义被删除的文字
+
+     -->
+
+    <strong>我是文字</strong>
+    <ins>我是文字</ins>
+    <em>我是文字</em>
+    <del>我是文字</del>
+
+    <br>
+    <p>字符实体</p>
+    <!-- 
+        在HTML、中对空格，回车，tab不敏感
+        用字符实体达到多个空格的效果
+        1.什么是字符实体？
+            有些字符保留，有些不显示
+
+        空格：&nbsp;
+        <:&lt;    (less than)
+        >:&gt;    (great than)
+        版权符号：&copy;
+     -->
+    <p>到此为止，我们&nbsp;学习了&lt;p&gt;&copy;</p>
+</body>
+
+</html>

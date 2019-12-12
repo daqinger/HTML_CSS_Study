@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>后代选择器</title>
+    <style>
+        div p {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+         1.什么是后代选择器
+         作用：找到指定标签的所有后代标签，设置属性
+         格式：
+            标签名称1 标签名称2{
+                属性：值;
+            }
+        含义：先找到名称为标签1的标签，再往下找找到标签2的标签，然后设置属性
+            如：div p{
+
+            }
+
+            注意点：
+                1.后代选择器必须用空格隔开
+                2.后代不仅仅是儿子，也包括孙子等等
+                3.后代选择器不仅仅可以使用标签名称，还可以使用其他选择器
+      -->
+    <div>
+        <p>我是段落</p>
+        <p>我是段落</p>
+        <ul>
+            <li>
+                <p>我是段落</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

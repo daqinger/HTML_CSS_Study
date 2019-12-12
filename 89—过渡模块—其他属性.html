@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>过渡模块—其他属性</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(250, 181, 181);
+            transition-property: width;
+            transition-duration: 2s;
+            /* 告诉系统延迟多少秒开始动画效果 */
+            transition-delay: 1s;
+        }
+        
+        div:hover {
+            width: 200px;
+        }
+        
+        ul {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: pink;
+            border: 1px solid #000;
+        }
+        
+        ul li {
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: rgb(123, 180, 233);
+            transition-property: margin-left;
+            transition-duration: 10s;
+        }
+        
+        ul:hover li {
+            margin-left: 700px;
+        }
+        
+        ul li:nth-child(1) {
+            transition-timing-function: linear;
+        }
+        
+        ul li:nth-child(2) {
+            transition-timing-function: ease;
+        }
+        
+        ul li:nth-child(3) {
+            transition-timing-function: ease-in;
+        }
+        
+        ul li:nth-child(4) {
+            transition-timing-function: ease-out;
+        }
+        
+        ul li:nth-child(5) {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <ul>
+        <li>linear</li>
+        <li>ease</li>
+        <li>ease-in</li>
+        <li>ease-out</li>
+        <li>ease-in-out</li>
+    </ul>
+    <!-- 
+        连写属性 
+        1.过渡连写格式
+        transition：过渡属性 过渡时长 运动速度 延迟时间;
+        transition: width 5s linear 2s; 
+
+        如果需要俩属性过渡，就
+        transition：过渡属性 过渡时长 运动速度 延迟时间，transition：另一个过渡属性 过渡时长 运动速度 延迟时间；
+
+        属性都需要可以简写成：
+        transition：all 2s;
+     -->
+</body>
+
+</html>

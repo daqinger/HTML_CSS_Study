@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>清除浮动方式五</title>
+    <style>
+        /* div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(36, 195, 200);
+            overflow: hidden;
+        } */
+        
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .box1 {
+            background-color: rgb(138, 218, 204);
+            overflow: hidden;
+            /* 清除兼容问题 */
+            *zoom: 1;
+        }
+        
+        .box2 {
+            background-color: rgb(44, 199, 77);
+        }
+        
+        .box1 p {
+            background-color: rgb(212, 198, 116);
+            width: 100px;
+        }
+        
+        .box2 p {
+            background-color: rgb(196, 98, 98);
+            width: 100px;
+        }
+        
+        p {
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div>我是 文 字我是 文字我是 文字 是文 字 我是文字我是文字我是文字v
+    </div> -->
+    <!-- 
+        1.overflow: hidden;作用
+            1.可以将超出标签范围的内容裁剪掉
+            2.可以清除浮动
+            3.可以让里面的盒子设置margin-top之后，外面的盒子不会被顶下来
+     -->
+    <div class="box1">
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+    </div>
+
+    <div class="box2">
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+    </div>
+</body>
+
+</html>

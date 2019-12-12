@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>无序列表</title>
+
+</head>
+
+<body>
+    <!-- 
+      1.什么是列表标签：给一堆数据添加列表语义
+
+      2.HTML中列表的分类
+      2.1无序列表（最多）unordered list
+      2.2有序列表（最少）ordered list
+      2.3定义列表（其次）definition list
+
+      3.无序列表的作用
+      给一堆数据添加列表语义，并且这一堆数据所有的数据没有先后之分
+
+      4.无序列表的格式：
+      <ul>
+          <li>需要显示的条目<li/>
+      <ul/>
+
+      list是列表的意思
+      item是条目的意思
+
+      5.注意点：
+      5.1 前面的小圆点不需要现在关注，学了css之后就行了
+      5.2 ul和li标签是一个组合，ul标签中不推荐加上其他标签
+            就是ul标签里只有li标签
+      5.3如果li标签特别复杂，我们可以在li标签中放其他标签
+
+      6.应用场景
+        新闻列表
+        商品列表
+        导航条
+   -->
+    <h2>中国的城市有哪些</h2>
+    <ul>
+        <li>广州</li>
+        <li>上海</li>
+    </ul>
+
+    <!-- 
+        5.3实例
+     -->
+    <h1>四大名著</h1>
+    <ul>
+        <li>
+            <h2>三国演义</h2>
+            <p>sanguoyanyi</p>
+        </li>
+        <li>
+            <h2>水浒传</h2>
+            <p>shuihuzhuan</p>
+        </li>
+        <li>
+            <h2>西游记</h2>
+            <p>xiyouji</p>
+        </li>
+        <li>
+            <h2>红楼梦</h2>
+            <p>hongloumeng</p>
+        </li>
+    </ul>
+    <!-- 
+        物品清单实例（无序列表中的无序列表）
+     -->
+    <h1>物品清单</h1>
+    <ul>
+        <li>
+            <h2>蔬菜</h2>
+            <ul>
+                <li>白菜</li>
+                <li>萝卜</li>
+                <li>黄瓜</li>
+            </ul>
+        </li>
+        <li>
+            <h2>水果</h2>
+            <ul>
+                <li>苹果</li>
+                <li>梨子</li>
+                <li>葡萄</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- 
+        快捷方式：
+                ul>li*x     其中，x为你想要的li标签个数
+                
+        标签中的标签可以： ul>li*x>h2+ul>li*x
+     -->
+
+    <p>定义列表</p>
+    <!-- 
+         定义列表的格式
+         <dl>
+             <dt></dt>
+             <dd></dd>
+             <dt></dt>
+             <dd></dd>
+         </dl>
+
+         dt: definition title 定义标题
+         dd：definition description 定义描述
+
+         定义列表的应用场景：
+         1.做网站尾部的相关信息
+         2.做图文混排
+
+         定义列表的注意点：
+         1.不会单独出现
+         2.dl中只放dd，dt，推荐使用一个dd对应一个dt
+         3.和li标签一样，当需要丰富界面时，可以在dt或dd标签中添加其他标签
+
+      -->
+    <dl>
+        <dt>北京</dt>
+        <dd>中国的首都</dd>
+        <dt>上海</dt>
+        <dd>富人集结地</dd>
+    </dl>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>无限滚动</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      div{
+          width: 600px;
+          height: 188px;
+          border: 1px solid #000;
+          margin: 100px auto;
+          overflow: hidden;
+      }
+       ul{
+          width: 2000px;
+          height: 188px;
+          background-color: rgb(0, 0, 0);
+          animation: move 10s linear 0s infinite normal;
+            
+      }
+      ul li{
+          list-style: none;
+          width: 300px;height: 188px;
+          background-color: rgb(243, 81, 81);
+          border: 1px solid #000;
+          box-sizing: border-box;
+          float: left;
+      } 
+      img{
+          width: 600px;
+          height: 188px;
+      }
+      ul:hover{
+          animation-play-state: paused;
+      }
+      ul:hover li{
+          opacity: 0.5;
+      }
+      ul li:hover{
+          opacity: 1;
+      }
+      @keyframes move{
+          from{
+              margin-left: 0;
+            }
+            to{
+                margin-left: -1200px;
+            }
+      }
+  </style>
+ </head>
+ <body>
+ <div>
+    <ul>
+        <li><img src="images/yun1.jpg" alt=""></li>
+        <li><img src="images/yun2.jpg" alt=""></li>
+        <li><img src="images/yun3.jpg" alt=""></li>
+        <li><img src="images/yun4.jpg" alt=""></li>
+        <li><img src="images/yun1.jpg" alt=""></li>
+        <li><img src="images/yun2.jpg" alt=""></li>
+    </ul>
+ </div>
+ </body>
+</html>

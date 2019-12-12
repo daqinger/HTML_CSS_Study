@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>背景缩写</title>
+    <style>
+        body {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.背景属性缩写的格式
+      background：背景颜色 背景图片 平铺方式 关联方式 定位方式;
+
+      2.注意点：
+        1.任何一部分省略都没事
+
+      3.什么是背景关联方式
+        默认背景图片会移除，若固定，则用
+        
+
+      4.如何修改关联方式
+      background-attachment: fixed;
+      取值：
+            fixed   不会随着滚动条的滚动而滚动
+            scroll  会随着滚动条的滚动而滚动
+   -->
+
+    <!-- 
+       1.背景图片与插入图片的区别
+         注：快速创建一串div方式:div.box$*3
+
+         1.背景图片仅仅是装饰不会占用位置
+            插入图片会占用位置
+         2.背景图片有定位属性，控制图片位置很方便
+            插入图片没有，移动不方便
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

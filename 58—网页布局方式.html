@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>网页布局方式</title>
+    <style>
+        /*
+        标准流css样式
+         p,
+        div,
+        h1 {
+            border: 1px solid #000;
+        }
+        
+        span,
+        strong,
+        b {
+            border: 1px solid #000;
+        } */
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(62, 217, 228);
+            display: inline-block;
+            float: left;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(102, 212, 111);
+            display: inline-block;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.什么是网页布局方式
+      指浏览器是如何对网页元素排版的
+
+      2.方式有三
+        1.标准流（文档流/普通流）排版方式
+            1.浏览器默认排版方式
+            2.在css中在元素中分为三类，块级/行内/行内块级
+            3.在标准流中有两种排版方式：
+                水平排版：行内/行内块级
+                垂直排版：块级
+
+
+        2.浮动流排版方式
+            1.浮动流是一种半脱离标准流的排版方式
+            2.浮动流只有一种排版方式，就是水平排版
+            3.它只能设置某个元素左对齐或者右对齐
+
+            注意：
+                1.浮动流没有居中对齐
+                2.在浮动流中是不可以使用margin：0 auto;的
+
+            特点：
+                1.在浮动流中不区分块级元素行内元素行内块级元素
+                2.在浮动流中，三种元素都能设置宽高
+                3.综上：浮动流的元素和标准流的块级行内元素很像
+
+        3.定位流排版方式
+
+   -->
+
+    <!-- 
+        标准流代码实例
+
+        <div>我是div</div>
+    <h1>我是标题</h1>
+    <p>我是段落</p>
+    <span>我是span</span>
+    <strong>我是强调</strong>
+    <b>我是加粗</b>
+    <br><br>
+    <hr> -->
+
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+
+</html>

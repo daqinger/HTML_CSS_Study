@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>定位流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .box1 {
+            background-color: rgb(123, 211, 204);
+        }
+        
+        .box2 {
+            background-color: rgb(219, 136, 136);
+            position: relative;
+            /* top: 20px; */
+             left: 20px;
+            /* right: 20px;  */
+            /* margin: 20px;
+            box-sizing: border-box; */
+            /* margin-left: 20px; */
+
+        }
+        
+        .box3 {
+            background-color: rgb(163, 230, 137);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.定位流分类
+            1.相对定位
+            2.绝对定位
+            3.固定定位
+            4.静态定位
+
+      2.什么是相定位
+      就是相对于自己在以前标准流中的位置来定位
+
+      3.相对定位注意点
+        1.相对定位不脱离标准流,会继续在标准流中占据一份空间
+        2.在相对定位中，同一个方向定位属性只能使用一个
+        3.区分块级，行内，行内块级
+        4.相对定位元素会占用标准流位置，所以设置padding和margin属性，会影响标准流的元素位置
+      
+      4.相对定位应用场景
+        1.用于对元素进行微调
+        2.配合后面学习绝对定位来使用
+   -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <span>我是span</span>
+</body>
+
+</html>

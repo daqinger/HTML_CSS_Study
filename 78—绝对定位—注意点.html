@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>绝对定位—注意点</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(224, 96, 96);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .box2 {
+            width: 2000px;
+            height: 100px;
+            background-color: rgb(89, 228, 113);
+        }
+        
+        .box3 {
+            width: 100px;
+            height: 2000px;
+            background-color: rgb(81, 203, 224);
+        } */
+        
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(224, 91, 91);
+            border: 10px solid rgb(226, 214, 103);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(99, 204, 223);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.如果一个绝对定位的元素是以body作为参考点
+        那么其实是以网页的首屏的宽度和高度作为参考点
+        而不是以整个网页的宽度和高度作为参考点
+
+        2.一个绝对定位的元素会忽略祖先元素的padding
+     -->
+
+    <!-- <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div> -->
+
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+
+</html>
++

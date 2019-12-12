@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>a标签伪类选择器</title>
+    <style>
+        a:link {
+            color: rgb(250, 225, 3);
+        }
+        
+        a:visited {
+            color: tomato;
+        }
+        
+        a:active {
+            color: rgb(42, 220, 226);
+        }
+        
+        a:hover {
+            color: rgb(10, 9, 9);
+            border-bottom: 1px solid rgb(253, 2, 2);
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.a标签存在一定状态
+            1.默认状态，从未被访问过
+            2.被访问过的状态
+            3.鼠标长按的状态
+            4.鼠标悬停在a标签上状态
+        
+        2.什么是a标签的伪类选择器？
+            是专门用来修改a标签不同状态的样式的
+        
+        3.格式
+            ：link 修改从未被访问的a标签样式
+            : visited 修改被访问下的状态样式
+            : active 修改鼠标长按下的状态样式
+            : hover 修改鼠标悬停下的状态样式
+
+        4.注意点
+            1.a标签的伪类选择器可以一块用，也可以单独用
+            2.a标签的伪类选择器如果一起出现，必须按照上面顺序依次设置
+            3.如果默认状态的样式和被访问状态样式相同可以简写
+
+     -->
+    <a href="http://www.w3school.com.cn/tags/index.asp" target="_blank">s3</a>
+    <a href="https://www.tmall.com/?ali_trackid=2:mm_26632258_3504122_48284354:1520586632_315_299704991&clk1=52d522954bb5e81535eb77da9342b2d5&upsid=52d522954bb5e81535eb77da9342b2d5" target="_blank">天猫</a>
+
+</body>
+
+</html>

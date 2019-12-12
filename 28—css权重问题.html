@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>优先级之权重问题</title>
+    <style>
+        #id1 .box2 {
+            color: red;
+        }
+        
+        .box1 .box2 {
+            color: green;
+        }
+        
+        div ul li p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.什么是优先级 的权重
+      作用:当多个选择器混合在一起时,可以通过计算权重来判断谁的优先级最高
+
+      2.权重计算规则
+        1.首先先计算选择器中有多少个id,id多的选择器优先级最高
+        2.如果id的个数一样,那么再看类名的个数,相同
+        3.再其次,看标签名称的个数
+        4.再其次,不会再计算,谁写在后面谁说了算
+
+    3.注意点:
+        1.只有选择器直接选中才要计算权重
+        2.
+      
+   -->
+    <div id="id1" class="box1">
+        <ul>
+            <li>
+                <p id="id2" class="box2">我是段落</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

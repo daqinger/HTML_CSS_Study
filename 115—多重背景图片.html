@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多重背景图片</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 900px;
+            height: 900px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* 
+            多张背景图片用逗号隔开即可
+            注意点：
+                1.先添加的背景图片会盖住后添加 的背景图片
+                2.建议在编写多重背景时拆开编写
+             */
+            background: url("images/lx4_1.jpg") no-repeat left top,
+            url("images/yun2.jpg") no-repeat right top;
+            /*
+
+            background-image: xxxxxxxx,xxxxxx
+            background-repeat: xxxxxx,xxxxx
+            xxxxxxx等等等
+
+             */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

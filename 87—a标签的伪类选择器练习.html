@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>a标签的伪类选择器练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            width: 960px;
+            height: 40px;
+            background-color: #ccc;
+            margin-top: 100px;
+            margin: 100px auto;
+        }
+        
+        ul li {
+            list-style: none;
+            width: 120px;
+            height: 40px;
+            float: left;
+            background-color: #80da8c;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        ul li a:link {
+            color: white;
+            text-decoration: none;
+            background-color: rgb(241, 152, 194);
+        }
+        /*
+        1.在企业 开发中，编写a标签的伪类选择器最好卸载标签选择器的后面
+        2.在企业开发中和a标签盒子相关的属性都写在标签选择器中
+            （显示模式/宽度/高度/padding/margin）
+        3.在企业开发中和a标签文字/背景相关的都写在伪类选择中
+         */
+        
+        ul li a {
+            width: 120px;
+            height: 40px;
+            display: inline-block;
+        }
+        
+        ul li a:hover {
+            color: rgb(109, 243, 243);
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+        <li><a href="#">我是导航</a></li>
+    </ul>
+</body>
+
+</html>

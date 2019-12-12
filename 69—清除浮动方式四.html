@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>清除浮动方式四</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .box1 {
+            background-color: rgb(138, 218, 204);
+        }
+        
+        .box2 {
+            background-color: rgb(44, 199, 77);
+        }
+        
+        .box1 p {
+            background-color: rgb(212, 198, 116);
+            width: 100px;
+        }
+        
+        .box2 p {
+            background-color: rgb(196, 98, 98);
+            width: 100px;
+        }
+        
+        p {
+            float: left;
+        }
+        
+        .box1::after {
+            /* 内容为空 */
+            content: "";
+            /* 块级 */
+            display: block;
+            /* 高度为0 */
+            height: 0;
+            /* 看不见 */
+            visibility: hidden;
+            /* 给添加的元素设置clear：both */
+            clear: both;
+        }
+        
+        .box1 {
+            /* 兼容IE6 */
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+        <p>我是文字1</p>
+    </div>
+
+    <div class="box2">
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+        <p>我是文字2</p>
+    </div>
+</body>
+
+</html>

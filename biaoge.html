@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>表格标签基本使用</title>
+</head>
+
+<body>
+    <!-- 
+        1.什么时表格标签：用来给一堆数据添加表格语义（一种数据展现形式）
+        2.格式：
+            <table>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+
+            其中，table指整个表格
+                tr指表格的一行
+                td指一行中的一个单元格
+        3.注意点：
+            3.1 表格有一个边框属性border，控制表格的宽度
+      -->
+    <!-- 
+          要求写一个表格，俩行三列( table>tr*2>td*3 )
+       -->
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <!-- 
+        表格的属性：
+        1.宽度和高度的属性width,heigh
+            可以给table、td标签使用
+
+        2.水平对齐和垂直对齐属性 align,valign
+            水平都可以，垂直只能给tr和td标签使用
+
+        3.外边距(单元格和单元格之间的距离)和内边距(文字和单元格之间的距离)的属性 cellspacing,cellpadding
+            只能给table标签使用
+
+        4.背景颜色bgcolor
+            table，tr，td标签都可以
+
+        注意：以后企业开发改变样式都是通过css，以上只是作为了解
+     -->
+
+    <table border="1" width="200px" cellspacing="0">
+        <tr>
+            <td align="right">1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+    </table>
+    <!-- 
+        细线表格
+            在表格中指定外边距为0实现细线是不靠谱的
+            表格的
+     -->
+    <p>细线表格</p>
+    <table bgcolor="black" cellspacing="1" width="300px" height="100px">
+        <tr bgcolor="white">
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+    </table>
+    <!-- 
+        表格的一种标签叫caption,可以设置表格的标题
+        th标签是 表格标题表格，这个标题替换td，行中数据会被加粗
+     -->
+    <p>设置表格标题</p>
+    <table cellspacing="0" width="300px" height="100px" border="1">
+        <caption>表格标题</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <!-- 
+        单元格合并
+            1.水平方向的单元格合并、
+                可以给td标签添加一个colspan=“2”属性，来指定
+                把某一个单元格当作俩个单元格，并删除一些td标签
+            2.垂直方向的单元格合并、
+                可以给td标签添加一个rowspan=“2”属性，来指定
+                把某一个单元格当作俩个单元格，并删除一些tr标签
+     -->
+    <p>水平单元格合并</p>
+    <table bgcolor="black" width="500px" height="100px" cellspacing="1">
+        <tr bgcolor="white">
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>垂直单元格合并</p>
+    <table bgcolor="black" width="500px" height="100px" cellspacing="1">
+        <tr bgcolor="white">
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+
+            <td></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>清空默认边距</title>
+    <style>
+        /*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+        
+        html {
+            color: #000;
+            background: #FFF
+        }
+        
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        
+        fieldset,
+        img {
+            border: 0
+        }
+        
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-style: normal;
+            font-weight: normal
+        }
+        
+        ol,
+        ul {
+            list-style: none
+        }
+        
+        caption,
+        th {
+            text-align: left
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+        
+        q:before,
+        q:after {
+            content: ''
+        }
+        
+        abbr,
+        acronym {
+            border: 0;
+            font-variant: normal
+        }
+        
+        sup {
+            vertical-align: text-top
+        }
+        
+        sub {
+            vertical-align: text-bottom
+        }
+        
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            font-size: 100%
+        }
+        
+        legend {
+            color: #000
+        }
+        
+        #yui3-css-stamp.cssreset {
+            display: none
+        }
+        
+        p {
+            box-sizing: border-box;
+            border: 1px solid #000;
+            width: 610px;
+            height: 110px;
+            background-color: #cdcdcd;
+            font-family: "黑体";
+            font-size: 20px;
+            line-height: 40px;
+            color: #676767;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.为什么要清空默认边距（外边距和内边距）
+        在企业开发中为了更好的控制盒子的宽度和高度
+
+        2.如何清空默认的边距
+         格式
+         * {
+            margin: 0;
+            padding: 0;
+            }
+
+        3.通配符选择器会遍历所有变迁，所以性能不好
+     -->
+
+    <!-- 
+         1.什么是行高
+            在CSS中所有 的行都有自己的行高\
+             line-height: 80px;
+        2.规律:
+            文字默认垂直居中
+            只要把文字的行高设置成盒子的高度，就可以保证文字在盒子中垂直居中
+
+            在企业开发中，如果文字有多行，就不行，只能设置padding来让文字居中
+      -->
+
+    <!-- 
+          1.在企业开发中，如果一个盒子中存储的是文字，那么一般情况下我们会议盒子
+          左边的内边距为基准，不会以右边的内边距为基准,因为会有误差
+
+          2.从何而来：因为右边如果放不下一个文字，那么文字就会换行显示
+
+          3.顶部的内边距并不是边框刀文字顶部的距离，而是边框到行高顶部的距离
+       -->
+    <p>葬爱:非主流文化的常用词，是当今网络流行术语.切流行于80末90后一代！ 葬,即埋葬.爱,即爱情.翻译成外语就bury love 。
+    </p>
+</body>
+
+</html>

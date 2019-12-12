@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <base target="_blank">
+    <!-- 
+        base标签就是统一指定当前页面的超链接（a标签）打开方式
+            必须写在head标签内
+            如有特例，则在特例重新指定
+     -->
+    <title>a标签基本使用</title>
+</head>
+
+<body>
+    <!-- 
+        a标签的属性：href，target,title
+        target：控制跳转方式，其的俩属性：_self,_blank
+        title: 鼠标悬停，会显示的提示信息
+     -->
+    <!-- 
+        a标签的作用：控制页面与页面之间跳转的
+        a标签的格式：<a href="">被点击的文字或图片</a>
+
+        注意点：
+        1.a标签可以让图片或文字被点击
+        2.一个a标签必须有一个href属性
+        3.网址必须正确
+        4.可跳转本地电脑地址，也可以跳转网络地址
+        5.可以跳转到当前页面指定位置（锚点）
+        6.可以跳转到指定页面的指定位置
+
+     -->
+
+    <a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040">网易</a><a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040">网易</a>
+    <a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040">网易</a><a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040"
+        target="_self">网易</a>
+    <a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040">网易</a><a href="http://study.163.com/course/courseLearn.htm?courseId=1003864040#/learn/video?lessonId=1004577265&courseId=1003864040"
+        target="_blank">网易</a>
+
+    <!-- 
+            假链接
+            点击之后不会跳转
+            存在意义：在企业开发前期，其他界面没写出来，只能使用假链接替代
+            假链接格式：
+            1.#
+            2.javascript：
+
+            两者区别：
+            # 会回到顶部
+            javascript： 不会回到顶部
+
+         -->
+    <a href="#">我是假链接</a>
+    <a href="javascript:">我也是假链接</a>
+    <br>
+    <!-- 
+        在本页面跳转（锚点，书签）
+     -->
+    <!-- 
+         要想通过a跳转到指定位置，那么就要告诉a标签一个独一无二的位置信息
+         1.给目标位置一个id属性
+         2.指定id进行跳转（在id前加#）
+      -->
+    <a href="#我是顶部" target="_self">跳转到顶部</a>
+    <h2 id="我是顶部">我是顶部</h2>
+    <!-- 
+        指定页面的指定位置
+     -->
+    <br>
+    <a href="firstpage.html#tiaozhuan">跳转到firstpage</a>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>序选择器</title>
+    <style>
+        p:first-child {
+            color: red;
+        }
+        
+        /* p:first-of-type {
+            color: aqua;
+        }
+        
+        p:last-child {
+            color: coral;
+        }
+        
+        p:last-of-type {
+            color: rgb(231, 37, 189);
+        }
+        
+        p:nth-child(2) {
+            color: rgb(152, 250, 24);
+        }
+        
+        p:nth-of-type(2) {
+            color: aquamarine；
+        }
+        
+        p:nth-last-child() {
+            color: aliceblue;
+        }
+        
+        p:nth-last-of-type(2) {
+            color: aliceblue;
+        }
+        
+        p:only-child {
+            color: aliceblue;
+        }
+        
+        p:only-of-type {
+            color: aliceblue;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 
+      1.同级别的第几个
+      p:first-child  选中同级别的第一个标签    3会变色
+      p:last-child  选中同级别的最后一个标签    5会变色
+      p:nth-child(N) 第N个标签
+      p:nth-last-child(N)  同级别倒数第N个
+      p:only-child  选中父标签唯一的p标签
+      注意点：不区分类型
+
+
+      2.同类型的第几个
+      p:first-of-type 选中同级别的同类型的第一个    1，3会变色
+      p:last-of-type 选中同级别的同类型的最后一个    2，5会变色
+      p:nth-of-type(N) 选中同级别的同类型第N个
+      p:nth-last-of-type(N) 选中同级别的同类型倒数第N个
+      p:only-of-type  选中父标签唯一类型的p标签
+   -->
+    <h1>
+        我是标题
+    </h1>
+    <p>我是段落1</p>
+    <p>我是段落2</p>
+    <div>
+        <p>我是段落3</p>
+        <p>我是段落4</p>
+        <p>我是段落5</p>
+    </div>
+
+</body>
+
+</html>

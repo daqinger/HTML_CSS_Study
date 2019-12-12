@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>过度模块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(250, 181, 181);
+            
+        }
+        /* 
+            :hover可以适用于任何标签
+         */
+        
+        div:hover {
+            /* 告诉系统哪个属性需要过度 */
+            transition-property: width, background-color;
+            /* 告诉系统过渡效果持续时长 */
+            transition-duration: 2s, 2s;
+            width: 120px;
+            height: 60px;
+            background-color: rgb(88, 223, 216);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.过渡三要素：
+            1.必须要有属性发生变化
+            2.必须告诉系统哪个属性需要执行过渡效果
+            3.必须告诉系统过渡效果持续时间
+
+        2.注意点
+            1.当多个属性需要同时执行过度效果时用逗号隔开即可
+            格式：transition-property: width, background-color;
+                 transition-duration: 2s, 2s; 
+     -->
+    <div></div>
+</body>
+
+</html>

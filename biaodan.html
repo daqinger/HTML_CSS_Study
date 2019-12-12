@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <!-- 
+      1.什么是表单：收集用户信息
+      2.什么是表单元素：HTML标签
+      3.表单格式
+        <form>
+            <表单元素>
+        </form>
+    4.常见的表单元素
+        4.1 input标签,有一个type属性，这个属性不同，就决定了表单的功能不同
+        
+   -->
+    <form action="">
+        账户<input type="text"><br><br>
+
+        <!-- 暗文输入框 -->
+        密码<input type="password"><br><br>
+
+        <!-- 指定默认值 -->
+        账户<input type="text" value="张三"><br><br>
+
+        <!-- 单选框 （收音机的按钮只能按一个）
+            注意点：
+            1.默认情况单选框不会互斥,要想互斥，单选框设置name属性，并且要相同
+            2.要想单选框默认选择一个框子，给input标签添加checked标签
+
+        -->
+        性别：<input type="radio" name="1">男
+        <input type="radio" name="1">女
+        <input type="radio" name="1" checked="checked">保密<br>
+
+        <!-- 多选框 -->
+        爱好：<input type="checkbox" checked="checked">篮球
+        <input type="checkbox">足球
+        <input type="checkbox">棒球
+        <input type="checkbox">乒乓<br>
+
+        <!--
+             定义普通按钮
+             通过value给按钮制定标题
+             作用：配合JS完成一些操作
+         -->
+        <input type="button" value="我是按钮">
+        <!-- 
+             定义图片按钮
+          -->
+        <input type="image" src="006wWyCTgy1fc9v1jt6g8j30j60ekmy0.jpg">
+
+        <!-- 
+            重置按钮
+            作用：清除表单中已经填好的数据
+            注意：如果想重写按钮默认“重置”文字，可以用value属性修改
+         -->
+        <input type="reset" value="改写重置的文字">
+        <!-- 
+             提交按钮
+             作用：将表单中已经填写的数据提交到远程服务器
+             注意：要想把表单数据提交到远程服务器要有条件：
+                1.要给form标签添加一个action的属性（action写的是要提交的服务器名称）
+                2.要给需要提交的数据加上name属性
+          -->
+        <input type="submit">
+
+        <!-- 
+            隐藏域
+            作用：配合提交按钮将一些数据默默的提交到服务器
+         -->
+        <input type="hidden">
+    </form>
+
+    <p>label标签</p>
+    <!-- 
+        默认情况下文字和输入框没有关系
+        若想聚焦，那就需要让文字和输入框绑定，那么使用label标签
+     -->
+    <form action="">
+        <label for="account">账号：</label> <input type="text" id="account"><br>
+        <label for="psw">密码：</label><input type="password" id="psw">
+
+
+        <!-- 还有一个其他方法 -->
+        <!-- 推荐使用 -->
+        <p>其他方法</p>
+        <label>
+            账号：<input type="text">
+        </label>
+    </form>
+
+    <!-- 
+        datalist标签
+        1.作用：给输入框增加备选项
+        2.格式：
+            <datalist>
+                <option>
+                    待选项
+                </option>
+            </datalist>
+        3.如何给输入框绑定预选列表
+            搞一个输入框
+            搞一个datalist列表
+            搞一个list，id
+        4.众多浏览器都不支持，只作为了解
+     -->
+    请输入你的车型：<input type="text" list="cars">
+    <datalist id="cars">
+         <option>奔驰</option>
+         <option>宝马</option>
+         <option>奥迪</option>
+         <option>路虎</option>
+         <option>宾利</option>
+     </datalist>
+
+    <!-- 
+         表单标签中的其他标签
+         select标签
+            作用：用于定义下拉列表
+            格式：
+            <select>
+                <option>列表数据<option>
+            </select>
+            注意点：
+                1.可以通过给option标签添加selected标签指定默认项
+                2.可以通过option标签包裹一个optgroup标签设置标签
+      -->
+    <p>select标签示例 </p>
+    <select name="" id="">
+        <optgroup label="中国">
+          <option value="">北京</option>
+          <option value="">上海</option>
+          <option value="">广州</option>
+          <option value="" selected="selected">重庆</option>
+        </optgroup>
+      </select>
+
+    <!-- 
+        表单标签中的其他标签
+        textarea标签
+            作用：定义一个多行输入框
+            格式：<textarea></textarea>
+
+            注意：
+            1.理论上无数行
+            2.可设置属性：cols指定列数，row指定行数
+            3.默认可有手动拉伸，可以通过css控制是否可以手动拉伸
+       -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- 除了按钮标签，其他的所有标签要提交，建议加上value值 -->
+
+    <!-- 
+        fieldset标签给表单添加边框
+        legend标签给边框添加标题
+     -->
+
+</body>
+
+</html>

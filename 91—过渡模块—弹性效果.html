@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>过渡模块—弹性效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            height: 100px;
+            background-color: rgb(235, 160, 160);
+            margin-top: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        div span {
+            font-size: 80px;
+            
+        }
+        
+        div:hover span {
+            transition-property: margin;
+            transition-duration: 3s;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>刘</span>
+        <span>哥</span>
+        <span>最</span>
+        <span>帅</span>
+        <span>么</span>
+        <span>么</span>
+        <span>哒</span>
+    </div>
+    <!-- 
+    1.编写过渡套路
+        1.不要管过渡，先编写基本界面
+        2.修改我们认为需要修改的属性
+        3.再回过头去给被修改属性的哪个元素添加过渡即可
+ -->
+</body>
+
+</html>

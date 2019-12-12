@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>浮动练习</title>
+    <style>
+        /*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+        
+        html {
+            color: #000;
+            background: #FFF
+        }
+        
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        input,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+        
+        fieldset,
+        img {
+            border: 0
+        }
+        
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-style: normal;
+            font-weight: normal
+        }
+        
+        ol,
+        ul {
+            list-style: none
+        }
+        
+        caption,
+        th {
+            text-align: left
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+        
+        q:before,
+        q:after {
+            content: ''
+        }
+        
+        abbr,
+        acronym {
+            border: 0;
+            font-variant: normal
+        }
+        
+        sup {
+            vertical-align: text-top
+        }
+        
+        sub {
+            vertical-align: text-bottom
+        }
+        
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            *font-size: 100%
+        }
+        
+        legend {
+            color: #000
+        }
+        
+        #yui3-css-stamp.cssreset {
+            display: none
+        }
+        
+        .header {
+            height: 100px;
+            width: 980px;
+            background-color: rgba(224, 210, 212, 0.747);
+            margin: 0 auto;
+        }
+        
+        .header .logo {
+            width: 250px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+        }
+        
+        .header .language {
+            width: 150px;
+            height: 50px;
+            background-color: skyblue;
+            float: right;
+        }
+        
+        .header .nav {
+            width: 650px;
+            height: 50px;
+            background-color: rgb(219, 109, 219);
+            float: right;
+        }
+        
+        .content {
+            width: 980px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background-color: rgb(202, 223, 170);
+        }
+        
+        .content .aside {
+            width: 320px;
+            height: 400px;
+            background-color: rgb(226, 226, 144);
+            float: left;
+        }
+        
+        .content .article {
+            width: 650px;
+            height: 400px;
+            background-color: rgb(180, 217, 219);
+            float: right;
+        }
+        
+        .content .article .articleTop {
+            width: 650px;
+            height: 350px;
+            background-color: rgb(82, 82, 211);
+        }
+        
+        .content .article .articleTop .articleTopLeft {
+            width: 400px;
+            height: 350px;
+            background-color: rgb(187, 77, 190);
+            float: left;
+        }
+        
+        .content .article .articleTop .articleTopLeft .new1 {
+            width: 400px;
+            height: 200px;
+            background-color: rgb(105, 173, 128);
+        }
+        
+        .content .article .articleTop .articleTopLeft .new2 {
+            width: 400px;
+            height: 140px;
+            background-color: rgb(19, 238, 136);
+            margin-top: 10px;
+        }
+        
+        .content .article .articleTop .articleTopRight {
+            width: 240px;
+            height: 350px;
+            background-color: rgb(201, 65, 65);
+            float: right;
+        }
+        
+        .content .article .articleBottom {
+            width: 650px;
+            height: 40px;
+            background-color: rgb(86, 86, 133);
+            margin-top: 10px;
+        }
+        
+        .footer {
+            width: 980px;
+            height: 40px;
+            background-color: rgb(224, 172, 163);
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.企业开发中什么时候使用标准流什么时候使用浮动流？
+        垂直方向使用标准流，水平方向使用浮动流
+
+        2.拿到一个复杂的界面如何入手？
+            1.从上至下布局
+            2.从外向内布局
+            3.水平方向先划分为一左一右，再对左边或右边进行进一步布局
+     -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="language"></div>
+        <div class="nav"></div>
+    </div>
+    <div class="content">
+        <div class="aside"></div>
+        <div class="article">
+            <div class="articleTop">
+                <div class="articleTopLeft">
+                    <div class="new1"></div>
+                    <div class="new2"></div>
+                </div>
+                <div class="articleTopRight"></div>
+            </div>
+            <div class="articleBottom"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>浮动元素高度问题</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        div {
+            border: 1px solid #000;
+        }
+        
+        p {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(95, 174, 206);
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.在标准流中，内容高度可以撑起盒子高度
+
+        2.在浮动流中浮动的元素是不可以撑起父类盒子高度
+     -->
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

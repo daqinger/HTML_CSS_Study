@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css书写格式</title>
+   <link rel="stylesheet" href="117.css">
+   <style>
+       @import "117.css";
+   </style>
+</head>
+<body>
+    <!-- 
+        1.行内样式
+        可以直接将css代码写到开始标签中
+
+        2.内嵌样式
+        平时用的那个
+        
+        3.外链样式——企业开发用这种
+        可以单独新建一个.css文件，把css代码写到这个文件中
+        然后通过link表签把这个文件和.html文件关联
+
+        4.导入样式
+        可以单独新建一个.css文件，把css代码写到这个文件中
+        然后通过@import把这个文件和.html文件关联
+
+        外链样式，导入样式区别
+        1.@import是css2.1推出有兼容问题
+        2.外链样式会先加载样式，再加载结构，导入相反/。，【
+     -->
+ <div>我是div</div> 
+<div style="color:red">我是div</div>
+</body>
+</html>
